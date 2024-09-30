@@ -64,7 +64,23 @@ void CManeuverManager::svc(double time)
             if((temp_pos.x >= 10 && temp_pos.x <= 20) && 
                 (temp_pos.y >= 10 && temp_pos.y <= 20) )
             {
-                
+                // subscribe
+                if(!is_subscriber(*iter))
+                    register_subscriber(*iter);
+
+                for(std::vector<CAgent*>::iterator jter = m_subscriber_list.begin();
+                    jter != m_subscriber_list.end(); ++jter)
+                {
+                    if((*jter) != (*iter))
+                    {
+                       (*jter)->detect(*iter); 
+                    }
+                }
+            }
+            else
+            {
+                if(is_subscriber(*iter))
+                    unregister_subscriber(*iter);
             }
         }
 }

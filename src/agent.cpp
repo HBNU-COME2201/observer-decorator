@@ -26,7 +26,6 @@ void CAgent::maneuver(double time)
 {
     m_position.x += sin(DEG2RAD(m_heading)) * m_speed * time;
     m_position.y += cos(DEG2RAD(m_heading)) * m_speed * time;
-
 }
 
 bool CAgent::detect(CAgent* pTarget)
