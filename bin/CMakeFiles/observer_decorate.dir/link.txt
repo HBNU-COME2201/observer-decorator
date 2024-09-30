@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/observer_decorate.dir/src/agent.cpp.o CMakeFiles/observer_decorate.dir/src/app.cpp.o CMakeFiles/observer_decorate.dir/src/mmanager.cpp.o -o observer_decorate 

@@ -1,3 +1,0 @@
-/home/cbchoi/COME2201/observer-decorator/bin/CMakeFiles/observer_decorate.dir
-/home/cbchoi/COME2201/observer-decorator/bin/CMakeFiles/edit_cache.dir
-/home/cbchoi/COME2201/observer-decorator/bin/CMakeFiles/rebuild_cache.dir
